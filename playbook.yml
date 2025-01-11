@@ -1,13 +1,7 @@
-- hosts: java
-  become: yes
-  become_user: root
-  become_method: sudo
+---
+- name: Install and configure Prometheus and Grafana
+  hosts: all
+  become: true
   roles:
     - prometheus
-
-- hosts: java
-  become: yes
-  become_user: root
-  become_method: sudo
-  roles:
     - grafana
