@@ -1,11 +1,11 @@
-- hosts: prometheus
+- hosts: java
   become: yes
   become_user: root
   become_method: sudo
   roles:
     - prometheus
 
-- hosts: grafana
+- hosts: java
   become: yes
   become_user: root
   become_method: sudo
